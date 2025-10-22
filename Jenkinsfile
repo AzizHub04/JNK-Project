@@ -4,7 +4,7 @@ pipeline {
   stages {
   stage('Cloner le dépôt') {
     steps {
-git url: 'https://github.com/Zayneeb/projetJenkins.git', branch: 'main'
+git url: 'https://github.com/AzizHub04/JNK-Project.git', branch: 'main'
 }
 }
 stage('Étape 1 : Vérification du dépôt') {
