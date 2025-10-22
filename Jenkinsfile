@@ -1,9 +1,9 @@
 pipeline {
-agent any
-options { timestamps() }
-stages {
-stage('Cloner le dépôt') {
-steps {
+  agent any
+  options { timestamps() }
+  stages {
+  stage('Cloner le dépôt') {
+    steps {
 git url: 'https://github.com/Zayneeb/projetJenkins.git', branch: 'main'
 }
 }
@@ -36,3 +36,5 @@ post {
 success { echo ' Build OK' }
 failure { echo ' Build KO' }
 }
+}
+  
